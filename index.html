@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+</head>
+<body ng-app="app" ng-controller="appController">
+	<div  ng-cloak ng-if="products.length">
+	<div class="cart-wrapper">
+		<div class="upper-cart">
+			<div class="summary"><strong>Your cart summary</strong></div>
+			<br>
+			<div class="left">
+				<span>Items in cart</span>
+				<br>
+				<span ng-bind="cartSize"></span>
+			</div>
+			<div class="right">
+				<span>Total(in Rs.)</span>
+				<br>
+				<span ng-bind="cartPrice"></span>
+			</div>
+		</div>
+		<br>
+		<br>
+		<hr>
+		<table>
+			<thead>
+				<th>Item</th>
+				<th>Quantity</th>
+				<th>Total Rs.</th>
+			</thead>
+			<tbody>
+				<tr ng-repeat="(key,item) in cart">
+					<td>{{item.BrandName}} {{item.ProductName}}</td>
+					<td ng-bind="item.Quantity"></td>
+					<td ng-bind="item.Quantity * item.Price"></td>
+					<td><button class="remove pointer" ng-click="removeItem(item.index)">Remove</button></td>
+				</tr>
+				<tr ng-if="!cartSize" class="empty-cart">
+					<td>Cart empty !!</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div>
+	<div class="item-box" ng-repeat="product in products">
+		<div>
+			<img ng-src="{{product.ProductImage}}">
+		</div>
+		<hr>
+		<span ng-bind="product.BrandName"></span>
+		<br>
+		<span ng-bind="product.ProductName"></span>
+		<br>
+		(<span ng-bind="product.PackingDetail"></span>)
+		<br>
+		Rs. <span ng-bind="product.Price"></span>/-
+		<br>
+		<hr>
+		<button class="add-cart pointer" ng-if="!product.Quantity" ng-click="changeQuantity($index,1)">Add to Cart</button>
+		<div ng-if="product.Quantity">
+			<span class="pointer" ng-click="changeQuantity($index,0)">-&nbsp&nbsp</span><span ng-bind="product.Quantity"></span><span class="pointer" ng-click="changeQuantity($index,1)">&nbsp&nbsp+</span>
+		</div>
+	</div>
+	</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/ngstorage/0.3.6/ngStorage.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

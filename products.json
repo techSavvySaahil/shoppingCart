@@ -1,0 +1,49 @@
+{
+	"info": {
+		"status":200
+	},
+	"data":[
+	{
+		"ProductImage":"mtr-turmeric.png",
+		"BrandName":"MTR",
+		"ProductName":"Powder Turmeric",
+		"PackingDetail":"500 gm pouch",
+		"Price":200
+	},
+	{
+		"ProductImage":"mtr-tamarind.jpg",
+		"BrandName":"MTR",
+		"ProductName":"Tamarind/Imli",
+		"PackingDetail":"400 gm pouch",
+		"Price":70
+	},
+	{
+		"ProductImage":"biryani.jpg",
+		"BrandName":"Dakshin's",
+		"ProductName":"Biryani Pulav - Masala",
+		"PackingDetail":"10 gm pouch",
+		"Price":100
+	},
+	{
+		"ProductImage":"cumin.jpg",
+		"BrandName":"MTR",
+		"ProductName":"Powder Cumin",
+		"PackingDetail":"500 gm pouch",
+		"Price":300
+	},
+	{
+		"ProductImage":"blackpepper.jpg",
+		"BrandName":"MTR",
+		"ProductName":"Black Pepper",
+		"PackingDetail":"100 gm pouch",
+		"Price":210
+	},
+	{
+		"ProductImage":"kitchen-king.jpg",
+		"BrandName":"MDH",
+		"ProductName":"Kitchen King",
+		"PackingDetail":"50 gm pouch",
+		"Price":60
+	}
+	]
+}

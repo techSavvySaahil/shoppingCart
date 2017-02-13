@@ -1,0 +1,126 @@
+body{
+		font-family: "Comic Sans MS", cursive, sans-serif;
+	}
+	th,td{
+		padding:5px;
+	}
+	.cart-wrapper{
+		position: relative;
+	    float: right;
+	    background-color: #a97664;
+	    opacity: 0.7;
+	    /*width: 40vw;*/
+	    border: 3px solid #8a5f50;
+	    border-radius: 10px;
+	    padding: 2vw;
+	    color: cornsilk;
+	    text-align: center;
+	    margin:4vw;
+	    min-width: 266px;
+	    width:60%;
+	    max-width:450px;
+	}
+	table button{
+		background-color: #d49e59;
+	    border: 0;
+	    padding: 5px 8px;
+	    border-radius: 5px;
+	    color: ghostwhite;
+	    opacity: 0.9;
+	}
+	.item-box{
+		min-height: 250px;
+		height:100%;
+		max-height: 300px;
+		display: inline-block;
+	    margin: 2vw;
+	    padding: 2vw;
+	    background-color: wheat;
+	    border-radius: 10px;
+	    text-align: center;
+	    color: #795548;
+	    width: 16vw;
+	    min-width:80px;
+	    width:15%;
+	    max-width:106px;
+	}
+	.add-cart{
+	    border: 1px solid black;
+	    padding: 5px 10px;
+	    background-color: rgba(146, 82, 82, 0.43);
+	    color: white;
+	    border-radius: 8px;
+	}
+	.upper-cart{
+		padding-bottom: 15px
+	}
+	.summary{
+		margin: auto;
+		position: relative;
+		width: 170px;
+	}
+	.upper-cart div{
+		display:inline-block;
+		position:relative;
+		padding:5px;
+	}
+	.left{
+		float:left;
+		margin-left:7%
+	}
+	.right{
+		float:right;
+		margin-right:7%
+	}
+	.remove{
+		position: relative;
+		float: right;
+	}
+	.empty-cart{
+		color:#ebf772;
+	}
+	.item-box img{
+		height:100px;
+		width:100px;
+	}
+	.pointer{
+		cursor: pointer;
+	}
+	[ng-cloak]{
+		display: none;
+	}
+	@media screen and (max-width:800px) {
+		.cart-wrapper{
+		}
+		th,td{
+			/*padding:10px 7%;*/
+		}
+		table{
+			/*width: 100%;*/
+		}
+		button{
+			/*font-size: 10px;*/
+		}
+		body, button{
+			font-size: 12px;
+		}
+		img{
+			width:75px !important;
+		}
+	}
+	/*@media screen and (max-width:480px), screen and (max-device-width:480px) and (orientation:portrait){
+		th,td{
+			/*padding:2% 2%;*/
+		/*}
+		.cart-wrapper{
+			width: 80vw;
+    		font-size: 10px;
+    		margin: 6vw;
+		}
+		table{
+			width:100%;
+		}
+		button{
+			font-size: 10px;
+		}
+	}*/
